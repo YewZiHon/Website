@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Zi Hon's page | Web Development</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"><!-- adding google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link href="fontawesome/css/all.css" rel="stylesheet">
+        
+	</head>
+    <script>
+    
+    
+    </script>
+	<body>
+        <div id="container">
+            <div id= "header">
+                <h1>Zi Hon's website</h1>
+                <p>Web Development</p>
+            </div>
+            <div>
+                <input type="checkbox" id="btn" hidden>
+                <label for="btn" id="icon">
+                <i class="fas fa-3x fa-bars" style="padding-left:3px;padding-top:1px;"></i></label>
+                <nav id="nav">
+                    <ul id="navlinks">
+                        <li class="firstLink"><a href="index.html"><h1><i class="fas fa-home"></i> Home</h1></a><br></li>
+                        <li><a href="about.html"><h1><i class="fas fa-address-card"></i> About</h1></a><br></li>
+                        <li><a href="fablabSafety.html"><h1><i class="fas fa-hard-hat"></i> Fablab Safety</h1></a><br></li>
+                        <li><a href="tools.html"><h1><i class="fas fa-tools"></i> Tools</h1></a><br></li>
+                        <li><a href="projectManagement.html"><h1><i class="fas fa-clipboard-list"></i> Project Management</h1></a><br></li>
+                        <li><a href="webDevelopment.html"><h1 class="currentLink"><i class="far fa-window-maximize"></i> Web Development</h1></a><br></li>
+                        <li><a href="computerAidedDesign.html"><h1><i class="fas fa-pencil-ruler"></i> Computer Aided Design</h1></a><br></li>
+                        <li><a href="3DPrinting.html"><h1><img class="svgIcon" src="media/3dprinting.svg" alt="3d printing" width=20px> 3D Printing</h1></a><br></li>
+                        <li><a href="laserCutting.html"><h1><img src="media/laser.svg" width=24px alt="laser"> Laser Cutting</h1></a><br></li>
+                        <li><a href="embededProgramming.html"><h1><img src="media/arduino.svg" width=24px alt="mcu prog"> Embeded Programming</h1></a><br></li>
+                        <li><a href="finalProject.html"><h1><i class="fas fa-tasks"></i> Final Project</h1></a><br></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="content">
+                
+                <div id="main">
+                    <br>
+                    <h1>Web Development</h1><br>
+                    <h3>This page documents my experience of web development. Click the links below to jump to a section.</h3><br>
+                    <ul>
+                        <li><a href="#_Basic_HTML" style="text-decoration: none;">Basic HTML</a></li>
+                        <li><a href="#_Basic_CSS" style="text-decoration: none;">Basic CSS</a></li>
+                        <li><a href="#_Basic_Site" style="text-decoration: none;">Basic Website</a></li>
+                        <li><a href="#_js" style="text-decoration: none;">Javascript</a></li>
+                        <li><a href="#_gf" style="text-decoration: none;">Google Font</a></li>
+                        <li><a href="#_Anav" style="text-decoration: none;">Animated Navigation Bar</a></li>
+                        <li><a href="#_af" style="text-decoration: none;">Adding Awesome Font</a></li>
+                        <li><a href="#_ci" style="text-decoration: none;">Adding Custom Icons</a></li> 
+                        <li><a href="#_rg" style="text-decoration: none;">Random greeting</a></li>
+                    </ul>
+                    <br><hr><br>
+                    <h1 id="_Basic_HTML">Basic HTML</h1><br>
+                    <p>HTML, Hyper Text Markup Language, is the language used for websites to design the structure and content of a webpage.</p>
+                    <p>
+                    HTML is made up of tags. Tags is how different sections of a website is defined.
+                    </p><br><hr><br>
+                    <p>There is the HTML tag and everything in the webpage will be between the opening, &lthtml&gt, and closing, &lt/html&gt, html tag.<br> 
+                    Then we have the head tag, &lthead&gt and &lt/head&gt where webpage’s metadata is stored. The webpage title, style and links to stylesheets are stored here. <br>
+                    The body tag, &ltbody&gt and &lt/body&gt is where the content of the webpage that is displayed to the user is.<br><br>
+                    <img src="media/6basic.PNG" alt="basic html" width=400px><br>
+                    These three tags make up the basic structure of a html file.
+                    </p><br><hr><br>
+                    <p>
+                        We have the title tag, &lttitle&gt and &lt/title&gt, this is the text that is displayed in a web browser’s title bar. The title tag is in the head section.<br><br>
+                        <img src="media/6title.PNG" alt="title" width=400px.>
+                        <img src="media/6titlehtml.PNG" alt="title" width=400px.>
+                    </p><br><hr><br>
+                    <p>There are heading tags form h1, the largest to h6, the smallest heading. <br><br>
+                        <img src="media/6heading.PNG" alt="title" height=400px>
+                        <img src="media/6headinghtml.PNG" alt="title" height=400px>
+                    </p><br><hr><br>
+                    <p>There are paragraphs, denoted by &ltp&gt and &lt/p&gt. And line breaks &ltbr&gt and &lthr&gt. &lthr&gt also inserts a horizontal line. <br><br>
+                        <img src="media/6para.PNG" alt="title" width=400px>
+                        <img src="media/6parahtml.PNG" alt="title" width=400px>
+                    </p><br><hr><br>
+                    <p>Images can be added with the &ltimg&gt tag. "src" is where the location of the image relative to the html file. "alt" is the text that is displayed when the image cannot be found. "width" and "height" sets the image size and aspect ratio.<br><br>
+                        <img src="media/6img.PNG" alt="title" width=400px>
+                        <img src="media/6imghtml.PNG" alt="title" width=600px>
+                    </p><br><hr><br>
+                    <p>Links can, denoted by &lta&gt and &lt/a&gt can be used to link to other pages on your website, other websites and specific points on the webpage, in the example below, it links to a heading with an id of "3d_Printing". Read more about id below.<br><br>
+                        <img src="media/6link.PNG" alt="title" width=400px>
+                        <img src="media/6linkhtml.PNG" alt="title" width=600px>
+                    </p><br><hr><br>
+                    <p>Lists can be created using the &ltol&gt tag for ordered list and &ltul&gt for unordered lists. &ltli&gt is used to denote points in the list.<br><br>
+                        <img src="media/6list.PNG" alt="title" height=400px>
+                        <img src="media/6listhtml.PNG" alt="title" width=400px>
+                    </p><br><hr><br>
+                    <p>"id" and "class" can be assigned to elements to address them in CSS to change their style.<br><br>
+                        <img src="media/6id.PNG" alt="title" width=400px>
+                    </p><br><hr><br>
+                    <h1 id="_Basic_CSS">Basic CSS</h1><br>
+                        <p>CSS or Cascading Style Sheets is a styling language. It is used to assign colours, fonts, presentation and layout of the webpage. The "*" below is the selector, in this case, "*" selects all elements. "margin", "padding" and "font-family" are the properties. The values are on the right. A semicolon seperates the properties and their values. All the selector's properties are enclosed in curly brackets.<br><br>
+                    <img src="media/6cssmain.PNG" alt="title" width=600px></p><br><hr><br>
+                    <p>An element can be assigned an id and class to styled.<br><br>
+                    <img src="media/6id.PNG" alt="title" width=600px></p><br><hr><br>
+                    <p> Colour can be defined in CSS using the property “color” for text color, and “background-color” fo background colors.<br><br>
+                        Colours can be defined by using standard colour names, HEX , RGB and HSL.<br><br>
+                        Hex colours are prefixed with a “#” and defined using hexadecimal values from 00 to FF. <br>
+                        For example: #FF7700 defines FF for red, 77 for green and 00 for blue.<br><br>
+                        RGB colour defines each colour red, green and blue, using a value form 0 to 255, “rgb(red, green, blue)”<br>
+                        An alpha value for transparency can also be defined, “rgba(red, green, blue, alpha)” and has a range from 0-1.<br><br>
+                        HSL colour defines the hue, saturation, and luminosity of the colour. Hue is a value from 0-360, saturation and luminosity are percent values from 0% to 100%, “hsl(hue, saturation, luminosity)”.<br>
+                        Just like with RGB colours, an alpha value can also be assigned, “hsla(hue, saturation, luminosity, alpha)” and has a range from 0-1.<br><br><img src="media/6csscol.PNG" alt="title" width=600px>
+                    </p><br><hr><br>
+                    <h1 id="_Basic_Site">Basic Website</h1><br>
+                    <p>
+                        Below is the first website that i created using basic HTML and CSS.
+                    <br><br>
+                    <img src="media/6First_website.png"alt="1st site"width=800px></p><br><hr><br>
+                    <p>In the html file, there is a link to the location of the css file. a link is required to define the relationship between the CSS stylesheet and the HTML document.<br><br>
+                    <img src="media/6firstcsslink.PNG" alt="csslink"width=800px>
+                    </p><br><hr><br>
+                    <p>The header is defined with the header is so that it can be selected in CSS. The color text alignment and spacing are defined in CSS.
+                        <br><br>
+                    <img src="media/6firsthead.PNG"alt="head"width=600px><img src="media/6firstcsshead.PNG"alt="head"width=400px>  
+                    </p><br><hr><br>
+                    <p>The navigation bar uses links to link to other websites. The width and alignment is defined in CSS.
+                        <br><br>
+                    <img src="media/6firstnav.PNG"alt="head"width=800px><img src="media/6firstcssnav.PNG"alt="head"width=400px>  
+                    </p><br><hr><br>
+                    <p>The main content section is defined with an id and styled with css to fill the remaining space.
+                        <br><br>
+                    <img src="media/6firstmain.PNG"alt="head"width=800px><img src="media/6firstcssmail.PNG"alt="head"width=400px>  
+                    </p><br><hr><br>
+                    <p>The footer uses "&ampcopy;" to display the copyright symbol, &copy;.
+                        <br><br>
+                    <img src="media/6firstfoot.PNG"alt="head"width=800px><img src="media/6firstcssfoot.PNG"alt="head"width=400px>  
+                    </p><br><hr><br>
+                    <h1 id="_js">Javascript</h1><br>
+                    <p>Experimenting with javascript. The whole script is enclosed inbetween the &ltscript&gt tag and &lt/script&gt.
+                        <br><br>
+                    <img src="media/Javascript_test.PNG"alt="head"width=800px>
+                    </p><br><hr><br>
+                    <p>Integer operations such as addition, subtraction multiplication and division.
+                        <br><br>
+                    <img src="media/6jsint.png"alt="head"width=800px><br>
+                    <img src="media/6jsinthtml.PNG"alt="head"width=800px>
+                    </p><br><hr><br>
+                    <p>String operations, finding the length, number of characters, of the string and substring operations.
+                        <br><br>
+                    <img src="media/6jsstr.png"alt="head"width=800px><br>
+                        <img src="media/6jsstrhtml.PNG"alt="head"width=800px>
+                    </p><br><hr><br>
+                    <p>If statements for decision making.
+                        <br><br>
+                    <img src="media/6jsif.png"alt="head"width=800px><br>
+                        <img src="media/6jsifhtml.PNG"alt="head"width=800px>
+                    </p><br><hr><br>
+                    <p>For loop used to print statements until "I" ia a set number.
+                        <br><br>
+                    <img src="media/6jsfor.png"alt="head"width=800px><br>
+                        <img src="media/6jsforhtml.PNG"alt="head"width=800px>
+                    </p><br><hr><br>
+                    <h1 id="_gf">Google Font</h1><br>
+                    <p>Google font is added as a stylesheel using the link tag. The font is then assigned in CSS.
+                        <br><br>
+                    <img src="media/6gflinkcss.PNG"alt="head"width=400px><br>
+                        <img src="media/6gflinkhtml.PNG"alt="head"width=800px>
+                    </p><br><hr><br>
+                    <h1 id="_Anav">Animated Navigation Bar</h1><br>
+                    <p>This is a working animated navigation bar with a menu button. The background color of the links changes when you hover over it.<br><br>
+                    <img src="media/6anav.gif"alt="head"width=1000px><br>
+                    </p><br><hr><br>
+                    <p>Working Menu button. A check box is defined in HTML and when clicked, it will move the button, the red box to position 180px from 0px. A transistion time is set in CSS. I had some problems getting the animation of the hyperlinks working but i eventually figured it out. 
+                        <br><br>
+                    <img src="media/6anavmenu.gif"alt="head"width=800px><br>
+                        <img src="media/6anavmenuhtml.PNG"alt="head"width=400px><br>
+                        <img src="media/6anavmenucss.PNG"alt="head"width=400px><br>
+                    </p><br><hr><br>
+                    <p>Working basic animated navigation bar. I had some problems getting the animation of the hyperlinks working but i eventually figured it out. 
+                        <br><br>
+                    <img src="media/6anav1.gif"alt="head"width=800px><br>
+                        <img src="media/6anavmenuhtml.PNG"alt="head"width=400px><br>
+                        <img src="media/6anavmenucss.PNG"alt="head"width=400px><br>
+                    </p><br><hr><br>
+                    <h1 id="_af">Adding Awesome Font</h1><br>
+                    <p>Awesome font provides icons to use below is an example usiing the bars icon for the menu button of the navigation bar. A radius and border are also added to the menu bar. The navigation bar's colours are also updated.
+                        <br><br>
+                    <img src="media/6afnav.PNG"alt="head"width=1000px><br>
+                        <img src="media/6afbars.PNG"alt="head"width=500px>
+                        <img src="media/6afbarslink.PNG"alt="head"width=500px><br>
+                        <img src="media/6afbarshtml.PNG"alt="head"width=1000px><br>
+                        <img src="media/6aficons.PNG"alt="head"width=500px><br>
+                    </p><br><hr><br>
+                    <h1 id="_ci">Adding Custom Icons</h1><br>
+                    <p>This is the process that i took to create my own svg icons. <br>
+                        <br>I drew the icon on autocad and saved it as a dxf.
+                        <br><br>
+                        <img src="media/6ciautocad.PNG"alt="head"width=800px>
+                        <br><br>
+                        The image is then converted to svg using an online conversion service.
+                        <br><br>
+                        <img src="media/6ciconvert.PNG"alt="head"width=800px>
+                        <br><br>
+                        The arduino icon was downloaded then edited to change the fill colour.
+                    </p><br><hr><br>
+                    <h1 id="_rg">Random greeting</h1><br>
+                    <p>I used Javascript to generate a random greeting at index.html whenever the page is loaded or refreshed. 
+                        <br><br>
+                        An array is defined with greetings.<br>
+                        The Math.random function generates a floating point number between 0 and 1.<br>
+                        the floating point number is multiplied with the length of the array.<br>
+                        The Math.floor function rounds down the number.<br>
+                        The document then writes the item in the array to the website.<br>
+                        The complete function is:<br>
+                        var hello = ["Hello!", "Greetings!", "Hey there!", "Howdy!", "Hi there.", "It's nice to meet you.", "Hey, good to see you!"];<br>
+                    document.write(hello[Math.floor(Math.random()*hello.length)]);
+                        <br><br>
+                    <img src="media/6rg.gif"alt="head"width=800px><br>
+                    </p><br><hr><br>
+                </div>
+            </div>
+        <footer id="footer">
+            copyright &copy; 2021 Yew Zi Hon
+        
+        </footer>
+        </div>
+	</body>
+</html>
