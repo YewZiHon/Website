@@ -3,7 +3,6 @@
     margin:0px;
     padding:0px;
     font-family: 'Josefin Slab', serif;
-    
 }
 html{
     height: 100%;
@@ -37,10 +36,14 @@ h1,h2,h3,h4,h5,h6{
     text-align:center;
     padding:10px;
     font-family: 'Josefin Slab', serif;
+    height:87px;
         
 }
 #header h1{
         font-size: 70px;
+}
+#header p{
+    font-size: 25px;
 }
 #content{
     padding-left:100px;
@@ -52,6 +55,12 @@ h1,h2,h3,h4,h5,h6{
 #main{/*content */
     width:100%;
     font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+#main p{
+    width:100%;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
 }
 /*main---------------------------------------------------------------------------------*/
 /*nav---------------------------------------------------------------------------------*/
@@ -81,6 +90,7 @@ h1,h2,h3,h4,h5,h6{
     overflow: hidden;
     left: -300px;
     transition: all 0.3s ease;
+    z-index: 999;
     
 }
 #navlinks{
@@ -119,6 +129,39 @@ h1,h2,h3,h4,h5,h6{
     color: #00C;
 }
 /*nav---------------------------------------------------------------------------------*/
+/*index      */
+.Slides{
+    display:none;
+}
+#port{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:850px;
+    
+}
+.imgslides{
+    max-width:850px;
+    height:487px;
+}
+.button{
+    border:none;
+    font-size: 20px;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+.selected{
+    color:#fff;
+    background-color:#00c;
+}
+/*index      */
 /*footer---------------------------------------------------------------------------------*/
 #footer{
     position: fixed;
