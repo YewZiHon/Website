@@ -47,8 +47,9 @@
                         <li><a href="#py" style="text-decoration: none;">Pythagorean cup</a></li>
                         <li><a href="#tt" style="text-decoration: none;">Tolerance test</a></li>
                         <li><a href="#bt" style="text-decoration: none;">Bridging test</a></li>
-                        <li><a href="#" style="text-decoration: none;">null</a></li>
-                        <li><a href="#" style="text-decoration: none;">null</a></li>
+                        <li><a href="#ot" style="text-decoration: none;">Overhang test</a></li>
+                        <li><a href="#it" style="text-decoration: none;">Infill test</a></li>
+                        <li><a href="#slice" style="text-decoration: none;">Slicing, Cura</a></li>
                     </ul><br><hr><br>
                     <h3 id="py">Pythagorean cup</h3>
                     <p>A Pythagorean cup, when filled above a certain level, will drain through a siphon.</p><img src="media/8pycup.png" width=800px><br><p>Lacedaimonios, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons</p><br><br>
@@ -105,6 +106,59 @@
                     <p>The text is also extruded in two different operations.</p><img src="media/8bt12.PNG" width=800px><br><img src="media/8bt13.PNG" width=800px><br>
                     <p>Click to download CAD files:</p>
                     <a href="downloads/bridging_test.zip" download><img src="media/8btthubm.PNG"width=400px></a><br><hr><br>
+                    <h3 id="ot">Overhang test</h3>
+                    <p>An overhang test can be used to determine the largest unsupported overhang angle that can be printed without the use of support structures.</p><img src="media/8ot.PNG" width=800px><br>
+                    <p>First the sketch for the overhang test profile as well as a cylindrical surface is drawn.</p><img src="media/8ot0.PNG" width=800px><br>
+                    <p>The cylindrical surface is then extruded.</p><img src="media/8ot1.PNG" width=800px><br>
+                    <p>A helix is drawn using the cylindrical surface as a tool.</p><img src="media/8ot2.PNG" width=800px><br>
+                    <p>The test profile is swept. The helix is used as a path.</p><img src="media/8ot3.PNG" width=800px><br>
+                    <p>The neutral geometry is extruded. This geometry supports the test geometry.</p><img src="media/8ot4.PNG" width=800px><br>
+                    <p>The sketch to create splitting surfaces is created.</p><img src="media/8ot5.PNG" width=800px><br>
+                    <p>The splitting surfaces are extruded.</p><img src="media/8ot6.PNG" width=800px><br>
+                    <p>The part is split, using the splitting surfaces as a tool.</p><img src="media/8ot7.PNG" width=800px><br>
+                    <p>Transform is used to move the parts so that there will be an offset between each test angle range.</p><img src="media/8ot8.PNG" width=800px><br>
+                    <p>A sketch is drawn to connect the test geometries together and to create a base.</p><img src="media/8ot9.PNG" width=800px><br>
+                    <p>The base is extruded.</p><img src="media/8ot10.PNG" width=800px><br>
+                    <p>Steps are extruded to make the scale easier to read.</p><img src="media/8ot11.PNG" width=800px><br>
+                    <p>Text is sketched on two layers as there is a step.</p><img src="media/8ot12.PNG" width=800px><br><img src="media/8ot13.PNG" width=800px><br>
+                    <p>Both layers of text is then extruded.</p><img src="media/8ot14.PNG" width=800px><br><img src="media/8ot15.PNG" width=800px><br>
+                    <p>Click to download CAD files:</p>
+                    <a href="downloads/Overhang_test.zip" download style=":hover opacity: 0.5;"><img src="media/8otthumb.PNG"width=400px ></a><br><hr><br>
+                    <h3 id="it">Infill test</h3><br>
+                    <p>This infil test shows how different infill percentages appear.</p>
+                    <img src="media/8it.PNG" width=800px><br>
+                    <p>The test strip width is a variable so that it can be changed easily.</p><img src="media/8it0.PNG" width=800px><br>
+                    <p>A sketch is drawn and each strip is extruded.</p><img src="media/8it1.PNG" width=800px><br>
+                    <img src="media/8it2.PNG" width=800px><br>
+                    <p>The base is then extruded.</p><img src="media/8it3.PNG" width=800px><br>
+                    <p>Another sketch is created for the side.</p><img src="media/8it4.PNG" width=800px><br>
+                    <p>The side is extruded in two extrude iprations to create a step so that it is easier to see the different infill steps.</p><img src="media/8it5.PNG" width=800px><br>
+                    <img src="media/8it6.PNG" width=800px><br>
+                    <p>Text is added in two sketches.</p><img src="media/8it7.PNG" width=800px><br>
+                    <img src="media/8it8.PNG" width=800px><br>
+                    <p>The text is then extruded in two extrude operations.</p><img src="media/8it7.PNG" width=800px><br>
+                    <img src="media/8it8.PNG" width=800px><br>
+                    <p>Click to download CAD files:</p>
+                    <a href="downloads/Infill_test.zip" download style=":hover opacity: 0.5;"><img src="media/8itthumb.PNG"width=400px ></a><br><hr><br>
+                    <h3 id="slice">Cura</h3><br>
+                    <p>Cura is a slicer, it turns 3d models into g code which the 3d printer can understand.</p><hr><br>
+                    <p>First we must add the Ultimaker 2+. Click settings, then printer, Add printers.</p><img src="media/8itc0.PNG" width=800px><br>
+                    <p>Click the dropdown for "Add a non-networked printer", then sellect Ultimaker 2+, then click add.</p><img src="media/8itc1.PNG" width=800px><br>
+                    <p>Now open the stl file that is to be printed with file, Open Files. </p><img src="media/8itc2.PNG" width=800px><br>
+                    <p>The stl files will be imported. </p><img src="media/8itc3.PNG" width=800px><br>
+                    <p>The position of the mesh can be changed by moving it. Select the object, then move and drag the red, green or blue arrows or enter absolute values.</p><img src="media/8itc4.PNG" width=800px><br><img src="media/8itc5.PNG" width=800px><br>
+                    <p>To duplicate models, select the mesh to duplicate, then right click and select multiply selected models.</p><img src="media/8itc6.PNG" width=800px><br>
+                    <p>A dialog will open. Enter the number of copies and click OK.</p><img src="media/8itc7.PNG" width=800px><br>
+                    <p>Move the other meshes into position.</p><img src="media/8itc8.PNG" width=800px><br>
+                    <p>To change the infill density, select mesh, modify settings for overlaps.</p><img src="media/8itc9.PNG" width=800px><br>
+                    <p>To change the infill density, select mesh, modify settings for overlaps. Then click select settings.</p><img src="media/8itc9.PNG" width=800px><br>
+                    <p>A dialog will appear to change the model settings.</p><img src="media/8itc10.PNG" width=800px><br>
+                    <p>Select the settings to change and click close.</p><img src="media/8itc11.PNG" width=800px><br>
+                    <p>Change the dropdown to cutting mesh. and the top layers to zero and the infill density to the desired onfill density.</p><img src="media/8itc12.PNG" width=800px><br>
+                    <p>The model is now prepared.</p><img src="media/8itc13.PNG" width=800px><br>
+                    <p>To generate the g code, click slice.</p><img src="media/8itc14.PNG" width=800px><br>
+                    <p>Once slicing is done, The time and material usage is shown. To view the path, click preview.</p><img src="media/8itc15.PNG" width=800px><br>
+                    <p>The infill, in orange can be seen.</p><img src="media/8itc16.PNG" width=800px><br>
                 </div>
             </div>
         <footer id="footer">
