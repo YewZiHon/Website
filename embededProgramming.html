@@ -41,9 +41,76 @@
             <div id="content">
                 
                 <div id="main"><br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu justo nec turpis molestie hendrerit. Nunc venenatis interdum justo, et porta nisi fringilla in. Praesent ac massa eget arcu euismod dapibus. In egestas elementum turpis. Nam ex odio, lacinia eget felis in, volutpat aliquet orci. Proin erat nibh, volutpat id nulla at, accumsan dignissim velit. Maecenas ut enim nec orci suscipit pulvinar id quis metus. Phasellus vel augue eu orci vehicula sodales ut in est. Pellentesque dui magna, eleifend a dolor sed, vestibulum sodales tellus. Pellentesque tincidunt rhoncus justo at commodo.
-
-                    <p>Suspendisse lobortis bibendum auctor. Proin lacus augue, molestie in malesuada quis, tincidunt vitae orci. Proin id dolor volutpat nisl venenatis bibendum mollis nec arcu. Cras posuere lectus at dui auctor luctus id eu tortor. Cras sed urna id metus mollis vestibulum. Vestibulum et nulla lectus. Curabitur suscipit accumsan blandit. Ut rutrum orci ut orci pulvinar pulvinar. Nunc id sem vel velit consequat tristique sit amet id orci. Aliquam sed orci eget est convallis ultrices. Vivamus tempor leo in rhoncus tincidunt. Quisque pharetra enim quis nisl tincidunt, at luctus felis maximus. Vestibulum consequat suscipit aliquet. Donec ultricies mattis ullamcorper. Maecenas molestie rhoncus bibendum. Mauris aliquam pellentesque condimentum.</p>
+                    <h1>Embeded Programming</h1><br>
+                    <p>Here are the various sensors and output devices tested on the Arduino UNO microcontroller.</p><br><hr><br>
+                    <h3>Click on a link below to jump to a section:</h3><br>
+                    <ul style="margin-left:50px;">
+                        <li><a href="#blink" style="text-decoration: none;">Blink</a></li>
+                        <li><a href="#traffic" style="text-decoration: none;">Traffic light</a></li>
+                        <li><a href="#extint" style="text-decoration: none;">Blink with external interupts</a></li>
+                        <li><a href="#analog" style="text-decoration: none;">Analog input with potentiometer</a></li>
+                        <li><a href="#servo" style="text-decoration: none;">Servo motor</a></li>
+                        <li><a href="#servopot" style="text-decoration: none;">Controlling a servo motor with a potentiometer</a></li>
+                        <li><a href="#responsive" style="text-decoration: none;">Blink while counting button presses</a></li>
+                        <li><a href="#pir" style="text-decoration: none;">Passive infrared sensor</a></li>
+                        <li><a href="#sonic" style="text-decoration: none;">Ultrasonic sensor</a></li>
+                    </ul><br><hr><br>
+                    
+                    <h3 id="blink">Blink</h3>
+                    <p>This program blinks two light emitting diodes(LEDs) every second.</p><img src="media4/blink.PNG" width=800px><br>
+                    <video width="800" autoplay muted><source src="media4/blink.mp4" type="video/mp4"></video><br>
+                    <p>Click <a href="downloads/blink.zip" download>here</a> to download code.</p>
+                    <br><hr><br>
+                    
+                    <h3 id="traffic">Traffic light</h3>
+                    <p>This program waits for a button press, then, waits five seconds to turn on the green LED and turn off the red LED.</p><img src="media4/traffic.PNG" width=800px><br>
+                    <img src="media4/traffic.gif" width=800px><br>
+                    <p>Click <a href="downloads/trafficlight.zip" download>here</a> to download code.</p>
+                    <br><hr><br>
+                    
+                    <h3 id="extint">Blink with external interupts</h3>
+                    <p>This program blinks an led and when the button is pressed the red LED imediately turns off and the green LED turns on. This program uses interupts to interupt the delay.</p><img src="media4/cblinkbuttonarduino.PNG" width=800px><br>
+                    <img src="media4/cblink.gif" width=800px><br>
+                    <p>Click <a href="downloads/complexblink.zip" download>here</a> to download code.</p>
+                    <br><hr><br>
+                    
+                    <h3 id="analog">Analog input with potentiometer</h3>
+                    <p>This program reads the analog voltage using analogRead() and prints it to the serial monitor. The analog digital converter(ADC) on the ATMEGA328p is a 10 bit successive approximation ADC. The analog voltage is converted to a digital signal one bit at a time atarting from the most significant bit(MSB). </p><img src="media4/aread.PNG" width=800px><br>
+                    <img src="media4/aread.gif" width=800px><br>
+                    <p>Click <a href="downloads/analogread.zip" download>here</a> to download code.</p>
+                    <br><hr><br>
+                    
+                    <h3 id="servo">Servo motor</h3>
+                    <p>This program reads the state of the button and turns a servo motor.</p><img src="media4/servo.PNG" width=800px><br>
+                    <video width="800" autoplay muted><source src="media4/servobutton.mp4" type="video/mp4"></video><br>
+                    <p>Click <a href="downloads/servobutton.zip" download>here</a> to download code.</p>
+                    <br><hr><br>
+                    
+                    <h3 id="servopot">Controlling a servo motor with a potentiometer</h3>
+                    <p>This program reads the analog voltage using analogRead() and uses the map()function to map analogread() values to servo PWM values.</p><img src="media4/servopot.PNG" width=800px><br>
+                    <img src="media4/servopot.PNG" width=800px><br>
+                    <p>Click <a href="downloads/servopot.zip" download>here</a> to download code.</p>
+                    <br><hr><br>
+                    
+                    <h3 id="responsive">Blink while counting button presses</h3>
+                    <p>This program blinks an led and when the button is pressed, the number of presses is printed to the serial monitor. This program uses interupts to interupt the delay of the LED blinks.</p><img src="media4/responsive.JPG" width=800px><br>
+                    <img src="media4/responsiveblink.gif" width=800px><br>
+                    <p>Click <a href="downloads/responsiveblink.zip" download>here</a> to download code.</p>
+                    <br><hr><br>
+                    
+                    <h3 id="pir">Passive infrared sensor</h3>
+                    <p>When motion is detected, the PIR sensor will output a logic high and the microcontroller will turn on the LED.</p><img src="media4/pir.PNG" width=800px><br>
+                    <video width="800" autoplay muted><source src="media4/pir.mp4" type="video/mp4"></video><br>
+                    <p>Click <a href="downloads/pir.zip" download>here</a> to download code.</p>
+                    <br><hr><br>
+                    
+                    <h3 id="sonic">Ultrasonic sensor</h3>
+                    <p>The microcontroller sends a pulse to the ultrasonic sensor to initiate the distance measurement. The ultrasonic sensor sends out pulses of sound and wait for their reflection to be received. The period of time between the pulses being sent and received is sent as a pulse to the microcontroller. The microcontroller measures the pulse duration and determines the distance.</p><img src="media4/hcsr04.PNG" width=800px><br>
+                    <img src="media4/usound.gif" width=800px><br>
+                    <video width="800" autoplay muted><source src="media4/usound.mp4" type="video/mp4"></video><br>
+                    <p>Click <a href="downloads/hcsr04.zip" download>here</a> to download code.</p>
+                    <br><hr><br>
+                    
                 </div>
             </div>
         <footer id="footer">
