@@ -54,6 +54,7 @@
                         <li><a href="#responsive" style="text-decoration: none;">Blink while counting button presses</a></li>
                         <li><a href="#pir" style="text-decoration: none;">Passive infrared sensor</a></li>
                         <li><a href="#sonic" style="text-decoration: none;">Ultrasonic sensor</a></li>
+                        <li><a href="#555" style="text-decoration: none;">555 Timer</a></li>
                     </ul><br><hr><br>
                     
                     <h3 id="blink">Blink</h3>
@@ -110,6 +111,59 @@
                     <video width="800" autoplay muted><source src="media4/usound.mp4" type="video/mp4"></video><br>
                     <p>Click <a href="downloads/hcsr04.zip" download>here</a> to download code.</p>
                     <br><hr><br>
+                    <h3 id="555">555 timer</h3><br>
+                    <p>The 555 timer is commonly used as a clock source or as an oscilator. It works by using an RC circuit. An RC circuit, comprises of a resistor and a capcitor. When the 555 timer is used as an astable multivibrator, the capacitor is charged slowly through the resistor, and the voltage across the capacitor slowly increases. A comparator will compare the voltage accross the capacitor and when the voltage reaches a certain point, two thirds of Vcc, the capacitor will be discharged through a resistor until the voltage across the capacitor reaches one third of Vcc.</p>
+                    <p>Click <a href="https://howtomechatronics.com/how-it-works/electronics/555-timer-ic-working-principle-block-diagram-circuit-schematics/" download>here</a> for more information on the 555 timer.</p>
+                    <br><hr><br>
+                    <p>Below shows the Tinkercad simulation of the 555 timer in Astable, Monostable and Bistable mode.</p><br><hr><br>
+                    <p>In astable mode, the LED blinks continously. In this mode, the 555 timer can be used as a clock source. The 555 timer can be used to generate a tone for a buzzer or provide a PWM signal to control a motor.</p>
+                    <img src="media4/555/tca.JPG" width=800px><br>
+                    <video width="800" autoplay muted loop><source src="media4/555/tca.mp4" type="video/mp4"></video><br><br><hr><br>
+                    <p>In monostable mode, the LED turns on for a short time after the button is pressed. In this mode the 555 timer can be used to dectect rising and falling edges with additional components.</p>
+                    <img src="media4/555/tcm.JPG" width=800px><br>
+                    <video width="800" autoplay muted loop><source src="media4/555/tcm.mp4" type="video/mp4"></video><br><br><hr><br>
+                    <p>In bistable mode, when the trigger pin of the 555 timer is connected to ground, the output will be high, when the reset pin is connectd to ground, the output will be low. In this mode the 555 timer acts as a SR latch, with trigger being set. The 555 timer can be used to debounce a switch as multiple pulses on the trigger pin will only cause the output to change once. The 555 timer can also be used as a single bit of memory, a flag for a microcontroller that can be triggered by an external event.</p>
+                    <img src="media4/555/tcb.JPG" width=800px><br>
+                    <p>Notice that when trigger or reset is pressed multiple times, the output does not change.</p>
+                    <video width="800" autoplay muted loop><source src="media4/555/tcb.mp4" type="video/mp4"></video><br><br><hr><br>
+                    <p>Click <a href="https://www.tinkercad.com/things/kAYjNn22eVe-555-timer" download>here</a> to see the Tinkercad simulation.</p>
+                    <br><hr><br>
+                    <h3>555 timer on breadboard</h3><br><br>
+                    <p>Parts needed for the 555 timer:</p><br>
+                    <table>
+                        <tr><th>N.O.   </th><th>Part Description    </th><th>Qty    </th></tr>
+                        <tr><td>1</td><td>NE555P</td><td>1</td></tr>
+                        <tr><td>2</td><td>Breadboard</td><td>1</td></tr>
+                        <tr><td>3</td><td>100nF ceramic capacitor</td><td>1</td></tr>
+                        <tr><td>4</td><td>100uF aluminium capacitor</td><td>1</td></tr>
+                        <tr><td>5</td><td>10K ohm resistor</td><td>2</td></tr>
+                        <tr><td>6</td><td>220 ohm resistor</td><td>1</td></tr>
+                        <tr><td>7</td><td>LED</td><td>1</td></tr>
+                        <tr><td>8</td><td>Male to male jumper</td><td>7</td></tr>
+                    </table><br><br><br>
+                    <img src="media4/555/b1.jpg" width=800px><br><br><hr><br>
+                    <p>The 555 timer is inserted into the breadboard across the trench.</p>
+                    <img src="media4/555/b2.jpg" width=800px><br>
+                    <p>The 220 ohm resistor and LED are connected to the output of the 555 timer.</p>
+                    <img src="media4/555/b3.jpg" width=800px><br>
+                    <p>The timing and control capacitor is connected.</p>
+                    <img src="media4/555/b4.jpg" width=800px><br>
+                    <p>The timing resistors, two 10K ohm resistors are connected.</p>
+                    <img src="media4/555/b5.jpg" width=800px><br>
+                    <p>Jumpers are used for the other connections.</p>
+                    <img src="media4/555/b6.jpg" width=800px><br>
+                    <p>555 timer in astable mode. The two 100K ohm resistors used were switched to 10K ohm resistors so that the LED blinks faster.</p>
+                    <img src="media4/555/ba.jpg" width=800px><br>
+                    <p>LED blinks continously.</p>
+                    <video width="800" autoplay muted loop><source src="media4/555/ba.mp4" type="video/mp4"></video><br><br><hr><br>
+                    <p>555 timer in monostable mode.</p>
+                    <img src="media4/555/bm.jpg" width=800px><br>
+                    <p>Led turns on and stays on for a short time after button is pressed. A jumper is used as a switch.</p>
+                    <video width="800" autoplay muted loop><source src="media4/555/bm.mp4" type="video/mp4"></video><br><br><hr><br>
+                    <p>555 timer in bistable mode.</p>
+                    <img src="media4/555/bb.jpg" width=800px><br>
+                    <p>The LED turns on when the trigger(orange) is connected to ground. And turns off when the reset(yellow) is connected to ground.</p>
+                    <video width="800" autoplay muted loop><source src="media4/555/bb.mp4" type="video/mp4"></video><br><br><hr><br>
                     
                 </div>
             </div>
