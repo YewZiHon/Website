@@ -41,13 +41,13 @@
             <div id="content">
                 
                 <div id="main"><br><br>
-                    <h1>Final Project ---work in progress---</h1><br>
+                    <h1>Final Project ---work in progress, 35% done---</h1><br>
                     <p>Here lies the documentation of my final project, the pen plotter.</p>
                     <br><hr><br>
                     <h3>Click on a link below to jump to a section:</h3><br>
                     <ul style="margin-left:50px;">
                         <li><a href="#idea" style="text-decoration: none;">Ideation</a></li>
-                        <li><a href="#features" style="text-decoration: none;">Features(expected completion 26)</a></li>
+                        <li><a href="#features" style="text-decoration: none;">Features</a></li>
                         <li><a href="#1cad" style="text-decoration: none;">First prototype-CAD(expected completion 26)</a></li>
                         <li><a href="#1ik" style="text-decoration: none;">First prototype-inverse kinematics(expected completion 26)</a></li>
                         <li><a href="#1prog" style="text-decoration: none;">First prototype-Programming(expected completion 26)</a></li>
@@ -60,7 +60,7 @@
                         <li><a href="#2ik" style="text-decoration: none;">Second prototype-inverse kinematics(expected completion 27)</a></li>
                         <li><a href="#2problems" style="text-decoration: none;">Second prototype-problems(expected completion 27)</a></li>
                         <li><a href="#3cad" style="text-decoration: none;">Final prototype-CAD(expected completion 27)</a></li>
-                        <li><a href="#3bom" style="text-decoration: none;">Final prototype-BOM(expected completion 27)</a></li>
+                        <li><a href="#3bom" style="text-decoration: none;">Final prototype-BOM</a></li>
                         <li><a href="#3print" style="text-decoration: none;">Final prototype-3D printing(expected completion 27)</a></li>
                         <li><a href="#3laser" style="text-decoration: none;">Final prototype-Laser cutting(expected completion 27)</a></li>
                         <li><a href="#3elec" style="text-decoration: none;">Final prototype-Electronics(expected completion 27)</a></li>
@@ -83,7 +83,14 @@
                     <img src="media5/1/scaraidea.jpg" width=800px><br>
                     <br><hr><br>
                     <h3 id="features">Features</h3><br><br>
+                    <p>The main features governing the design are:</p><br>
+                    <ol>
+                        <li>Easy toolpath generation-This is acheived using Cura, an easy to use 3D printing slicer.</li>
+                        <li>Untethered operation-The plotter should not need to be connected to a computer in order to function. Most 3D printers have an option to print from an SD card. The pen plotter should be able to plot from an SD card.</li>
+                        <li>A6 Working area-Large enough for simple designs, yet small enough to be portable.</li>
+                        <li>Screen to show avalable toolpaths so that the user can select the toolpath.</li>
                     
+                    </ol>
                     <br><hr><br>
                     <h3 id="1cad">First prototype-CAD</h3><br><br>
                     
@@ -126,6 +133,33 @@
                     
                     <br><hr><br>
                     <h3 id="3bom">Final prototype-BOM</h3><br><br>
+                    <table>
+                        <tr><th>N.O.&nbsp;</th><th>Part description</th><th>Qty</th></tr>
+                        <tr><td>1</td><td>Arduino nano</td><td>1</td></tr>
+                        <tr><td>2</td><td>MG90 Servo motor</td><td>1</td></tr>
+                        <tr><td>3</td><td>Optical sensor </td><td>2</td></tr>
+                        <tr><td>4</td><td>NEMA 17 Stepper motor </td><td>2</td></tr>
+                        <tr><td>5</td><td>HR4988 driver </td><td>2</td></tr>
+                        <tr><td>6</td><td>5.5*2.1 Barrel jack </td><td>1</td></tr>
+                        <tr><td>7</td><td>12V 1A Power supply </td><td>1</td></tr>
+                        <tr><td>8</td><td>GT2 timing belt, closed, 158mm, 6mm width </td><td>1</td></tr>
+                        <tr><td>9</td><td>GT2 pulley, 16 tooth, 6mm width, 5mm bore </td><td>1</td></tr>
+                        <tr><td>10</td><td>GT2 timing belt, open, 250mm min, 6mm width&nbsp;&nbsp;&nbsp;</td><td>1</td></tr>
+                        <tr><td>11</td><td>M3x7mm screw </td><td>6</td></tr>
+                        <tr><td>12</td><td>M4 washer </td><td>4</td></tr>
+                        <tr><td>13</td><td>M3*12mm screw </td><td>18</td></tr>
+                        <tr><td>14</td><td>M3*5mm screw </td><td>5</td></tr>
+                        <tr><td>15</td><td>M3 nut </td><td>19</td></tr>
+                        <tr><td>16</td><td>#4x8mm self-tapping screw </td><td>8</td></tr>
+                        <tr><td>17</td><td>M5x20mm screw </td><td>2</td></tr>
+                        <tr><td>18</td><td>6901 12x24x6mm bearing </td><td>3</td></tr>
+                        <tr><td>19</td><td>61902 16x28x7 bearing </td><td>1</td></tr>
+                        <tr><td>20</td><td>47uF capacitor 50V </td><td>4</td></tr>
+                        <tr><td>21</td><td>7805 voltage regulator </td><td>1</td></tr>
+                        <tr><td>22</td><td>1X40 Female header</td><td>2</td></tr>
+                        <tr><td>23</td><td>M4*20mm</td><td>8</td></tr>
+                        <tr><td>24</td><td>M4 nut</td><td>8</td></tr>
+                    </table>
                     
                     <br><hr><br>
                     <h3 id="3print">Final prototype-3D printing</h3><br><br>
@@ -170,6 +204,11 @@
                     <h4>Unoptimised program</h4><br> 
                     <p>digitalWrite() was used in the program but the function has a relatively long execution time and port manipulation would have been faster. Using timer interupts instead of delay would also have allowed the microcontroller to perform other tasks while in the delay.</p><br><br><br>
                     
+                    <h4>Low accuracy of plotter</h4><br> 
+                    <p>The plotter has a theoratial maximum accuracy of 0.3mm when the arms are fully extended. This is assuming that the mechanical cnstruction is ridgid enough. The low accuracy is because of the low microstepping capability of the stepper drivers used. The HR4988 stepper driver acheived 1/8 microstepping, while another stepper driver, the DRV8825 can aceive 1/32 microstepping, foure times the theoratical accuracy of the HR4988.</p><br><br><br>
+                    
+                    <h4>Limited toolpaths shown</h4><br> 
+                    <p>The plotter can only read the first five files in the SD card. Strings are used to store the toolpath names and since the string class dynamically assigns memory, using memory inefficiently. This is a problem because a large porpotion of memory is already used for the SD card and OLED screen, one quarter and one sixth of the memory respectively. The current program only leaves about 800 bytes for functions that allow the pen plotter to plot.</p><br><br><br>
                     <br><hr><br>
                     <p>Thank you for reading! &#x1F603;<p/>
                     <br>
