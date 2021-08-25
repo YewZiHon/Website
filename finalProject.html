@@ -70,56 +70,83 @@
                     </ul><br><hr><br>
 <br>    
 
-                    <h3 id="idea">Ideation</h3><br><hr><br>
+                    <h3 id="idea">Ideation</h3><br><br>
                     
-                    <h3 id="features">Features</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="features">Features</h3><br><br>
                     
-                    <h3 id="1cad">First prototype-CAD</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="1cad">First prototype-CAD</h3><br><br>
                     
-                    <h3 id="1ik">First prototype-inverse kinematics</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="1ik">First prototype-inverse kinematics</h3><br><br>
                     
-                    <h3 id="1prog">First prototype-Programming</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="1prog">First prototype-Programming</h3><br><br>
                     
-                    <h3 id="1elec">First prototype-Electronics</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="1elec">First prototype-Electronics</h3><br><br>
                     
-                    <h3 id="1file">First prototype-file format</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="1file">First prototype-file format</h3><br><br>
                     
-                    <h3 id="1toolpath">First prototype-problems</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="1toolpath">First prototype-problems</h3><br><br>
                     
 <br>
+                    <br><hr><br>
+                    <h3 id="2cad">Second prototype-CAD</h3><br><br>
                     
-                    <h3 id="2cad">Second prototype-CAD</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="2ik">Second prototype-inverse kinematics</h3><br><br>
                     
-                    <h3 id="2ik">Second prototype-inverse kinematics</h3><br><hr><br>
-                    
-                    <h3 id="2problems">Second prototype-problems</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="2problems">Second prototype-problems</h3><br><br>
                     
 <br>
+                    <br><hr><br>
+                    <h3 id="3cad">Final prototype-CAD</h3><br><br>
                     
-                    <h3 id="3cad">Final prototype-CAD</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="3bom">Final prototype-BOM</h3><br><br>
                     
-                    <h3 id="3bom">Final prototype-BOM</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="3print">Final prototype-3D printing</h3><br><br>
                     
-                    <h3 id="3print">Final prototype-3D printing</h3><br><hr><br>
+                    <br><hr><br>
+                    <h3 id="3laser">Final prototype-Laser cutting</h3><br><br>
                     
-                    <h3 id="3laser">Final prototype-Laser cutting</h3><br><hr><br>
+                    <br><hr><br>
                     
-                    <h3 id="3elec">Final prototype-Electronics</h3><br><hr><br>
-                    
-                    <h3 id="3slide">Final prototype-slide</h3><br><hr><br>
-                    
-                    <h3 id="3video">Final prototype-video</h3><br><hr><br>
-                    <iframe width="956" height="538" src="https://www.youtube.com/embed/uoFjJqn1yZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                    <h3 id="3how">Final prototype-How to use the pen plotter</h3><br><hr><br>
-                    
-                    <h3 id="3problems">Final prototype-Possible improvements</h3><br><hr><br>
+                    <h3 id="3elec">Final prototype-Electronics</h3><br><br>
                     
                     
+                    <br><hr><br>
+                    <h3 id="3slide">Final prototype-slide</h3><br><br>
+                    <img src="media5/EP1000slide.png" width=800px><br>
+                    <br><hr><br>
+                    <h3 id="3video">Final prototype-video</h3><br><br>
+                    <iframe width=100% height=760px src="https://www.youtube.com/embed/uoFjJqn1yZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><hr><br>
+                    <h3 id="3how">Final prototype-How to use the pen plotter</h3><br><br>
                     
+                    <br><hr><br>
+                    <h3 id="3problems">Final prototype-Possible improvements</h3><br><br>
                     
+                    <h4>Backlash</h4><br>
+                    <p> Although the backlash is lesser than the second prototype, there is still some backlash. This can be seen in the below photo. The start and end point are not the same.</p>
+                    <img src="media5/3/backlash.JPG" width=800px><br><br><br>
                     
-                    <br><br>
+                    <h4>Inaccurate motion</h4><br>
+                    <p>Linear interpolation is done in steps of 1mm this can be decreased to make the motion more accurate. </p><br><br><br>
+                    
+                    <h4>Movement planning</h4><br> 
+                    <p>CNC controllers like GRBL will plan movements in advance and create a buffer so that the velocity and acelleration of the arms will change slowly to avoid jerky motion and maintain a high accuracy.</p>
+                    <img src="media5/3/grbl.JPG" width=800px><br><br><br><br><br><br>
+                    
+                    <h4>Lack of accelleration</h4><br> 
+                    <p>There is no accelleration when driving the stepper motors and leads to jerky motion. The speed is also has to be kept low to avoid skipped steps.</p><br><br><br>
+                    
+                    <br><hr><br>
                     <p>Thank you for reading! &#x1F603;<p/>
                     <br>
                 </div>
