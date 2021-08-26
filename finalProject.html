@@ -41,7 +41,7 @@
             <div id="content">
                 
                 <div id="main"><br><br>
-                    <h1>Final Project ---work in progress, 74% done---</h1><br>
+                    <h1>Final Project ---work in progress, 85% done---</h1><br>
                     <p>Here lies the documentation of my final project, the pen plotter.</p>
                     <br><hr><br>
                     <h3>Click on a link below to jump to a section:</h3><br>
@@ -56,9 +56,9 @@
                         <li><a href="#1toolpath" style="text-decoration: none;">First prototype-toolpath generation</a></li>
                         <li><a href="#1test" style="text-decoration: none;">First prototype-Testing</a></li>
                         <li><a href="#1problems" style="text-decoration: none;">First prototype-problems</a></li>
-                        <li><a href="#2cad" style="text-decoration: none;">Second prototype-CAD(expected completion 27)</a></li>
+                        <li><a href="#2cad" style="text-decoration: none;">Second prototype-CAD</a></li>
                         <li><a href="#2ik" style="text-decoration: none;">Second prototype-inverse kinematics</a></li>
-                        <li><a href="#2problems" style="text-decoration: none;">Second prototype-problems(expected completion 27)</a></li>
+                        <li><a href="#2problems" style="text-decoration: none;">Second prototype-problems</a></li>
                         <li><a href="#3cad" style="text-decoration: none;">Final prototype-CAD(expected completion 27)</a></li>
                         <li><a href="#3bom" style="text-decoration: none;">Final prototype-BOM</a></li>
                         <li><a href="#3print" style="text-decoration: none;">Final prototype-3D printing(expected completion 27)</a></li>
@@ -67,7 +67,7 @@
                         <li><a href="#3test" style="text-decoration: none;">Final prototype-Testing</a></li>
                         <li><a href="#3slide" style="text-decoration: none;">Final prototype-slide</a></li>
                         <li><a href="#3video" style="text-decoration: none;">Final prototype-video</a></li>
-                        <li><a href="#3how" style="text-decoration: none;">Final prototype-How to use the pen plotter(expected completion 27)</a></li>
+                        <li><a href="#3how" style="text-decoration: none;">Final prototype-How to use the pen plotter</a></li>
                         <li><a href="#3problems" style="text-decoration: none;">Final prototype-Possible improvements</a></li>
                     </ul><br><hr><br>
 <br>    
@@ -215,17 +215,38 @@
                     <img src="media5/1/square.jpg" width=100%><br>
                     <br><hr><br>
                     <h3 id="1problems">First prototype-problems</h3><br><br>
-                    <p>The first prototype was not ment to be the final prototype. However the first prototype showed that the motors chosen were not suitable.</p>
                     <h4>Stepper motors</h4>
+                    <p>The first prototype was not meant to be the final prototype. However the first prototype showed that the motors chosen were not suitable.</p>
+                    
                     <p>The stepper motors were too weak and was not reliable. It would constantly skip steps and even when converted to bipolar. They also had a large ammount of backlash in them shown in the video below.</p>
                     <video width="800" autoplay muted loop><source src="media5/1/backl.mp4" type="video/mp4"></video><br>
-                    <p>This problem is solved in later prototypes by using a different more powerful stepper motor, a NEMA 17 stepper motor.</p><br><hr><br>
+                    <p>This problem is solved in later prototypes by using a different more powerful stepper motor, a NEMA 17 stepper motor.</p><br><br>
                     <h4>Lack of ridgity</h4>
-                    <p>The prototype was not ment to be as ridgid as the final prototype but the flexibility in the current design showed that the final design would need to be significantly stronger.</p>
+                    <p>The prototype was not meant to be as ridgid as the final prototype but the flexibility in the current design showed that the final design would need to be significantly stronger.</p>
 <br>
                     <br><hr><br>
                     <h3 id="2cad">Second prototype-CAD</h3><br><br>
-                    
+                    <p>Cad assembly of the whole pen plotter.</p>
+                    <img src="media5/2/c.JPG" width=800px><br>
+                    <img src="media5/2/c1.JPG" width=800px><br>
+                    <img src="media5/2/c2.JPG" width=800px><br>
+                    <img src="media5/2/c3.JPG" width=800px><br>
+                    <img src="media5/2/c4.JPG" width=800px><br>
+                    <p>End efector assembly. It was sopposed to clamp the pen after changing its height to be more ridgid. The final design was simplified as such a complex design was not likely to work well and a simpler design would be sufficient.</p>
+                    <img src="media5/2/c5.JPG" width=800px><br>
+                    <img src="media5/2/c6.JPG" width=800px><br>
+                    <img src="media5/2/c7.JPG" width=800px><br>
+                    <img src="media5/2/c8.JPG" width=800px><br>
+                    <p>Close up view of the pulley.</p>
+                    <img src="media5/2/c9.JPG" width=800px><br>
+                    <img src="media5/2/c10.JPG" width=800px><br>
+                    <p>Inner arm pulley.</p>
+                    <img src="media5/2/c11.JPG" width=800px><br>
+                    <img src="media5/2/c12.JPG" width=800px><br>
+                    <p>The parts were 3d printed and tested.</p>
+                    <img src="media5/2/test2.jpg" width=800px><br>
+                    <img src="media5/2/test3.jpg" width=800px><br>
+                    <img src="media5/2/test4.jpg" width=800px><br>
                     <br><hr><br>
                     <h3 id="2ik">Second prototype-inverse kinematics</h3><br><br>
                     <p>Inverse kinematics is used to convert a cartesian coordiante, an X, Y coordinate to an angle that the arms need to move to.</p>
@@ -237,6 +258,35 @@
                     
                     <br><hr><br>
                     <h3 id="2problems">Second prototype-problems</h3><br><br>
+                    <h4>Inconsistent homing</h4>
+                    <p>The homing of the plotter is inconsistent. In the videos below, it can be seen that the plotter homes to two different positions.</p>
+                    <video width="800" autoplay muted loop><source src="media5/2/home.mp4" type="video/mp4"></video><br>
+                    <video width="800" autoplay muted loop><source src="media5/2/home1.mp4" type="video/mp4"></video><br>
+                    <p>This is because the endstop is tiggered at two times for the inner arm because of the gear ratio.</p>
+                    <video width="800" autoplay muted loop><source src="media5/2/endstopdouble.mp4" type="video/mp4"></video><br>
+                    <p>This problem is fixed in the final prototype by moving the endstop to the larger pulley.</p>
+                    <br><br>
+                    <h4>Limited travel for outer arm.</h4>
+                    <p>The rotation for the outer arm is limited because the endstop is placed in the wrong position.</p>
+                    <video width="800" autoplay muted loop><source src="media5/2/wrongplaceendstop.mp4" type="video/mp4"></video><br>
+                    <p>The endstop is moved to the end near the bearing in the final prototype.</p>
+                    <br><br>
+                    <h4>Weak cable trench</h4>
+                    <p>The cable trench broke off and could no longer hold the wire.</p>
+                    <video width="800" autoplay muted loop><source src="media5/2/weakcabletrench.mp4" type="video/mp4"></video><br>
+                    <p>This was because the cable trench was only 0.8mm thick and was fixed by thickening the wall and chamfering it to make it stronger.</p>
+                    <br><br>
+                    <h4>Loose rotational joints</h4>
+                    <p>At the joints, there is some play that amkes the plotter inaccurate.</p>
+                    <video width="800" autoplay muted loop><source src="media5/2/ridgidity.mp4" type="video/mp4"></video><br>
+                    <p>This is because the bearing has a loose fit and has been fixed in the final prototype with larger bearings.</p>
+                    <video width="800" autoplay muted loop><source src="media5/2/loosebearing.mp4" type="video/mp4"></video><br><br><br>
+                    <p>The switch was moved and fixed with hot glue and the result was better.</p>
+                    <img src="media5/2/switchmove.jpg" width=800px><br>
+                    <h4>Backlash</h4>
+                    <p>The pulley was loose, casuaing the motion to be inaccurate.</p>
+                    <video width="800" autoplay muted loop><source src="media5/2/loosegear.mp4" type="video/mp4"></video>
+                    <p>This was fixed by using a ball bearing to constrain the motion of the pulley.</p><br><br><br>
                     
 <br>
                     <br><hr><br>
@@ -263,7 +313,7 @@
                         <tr><td>15</td><td>M3 nut </td><td>19</td></tr>
                         <tr><td>16</td><td>#4x8mm self-tapping screw </td><td>8</td></tr>
                         <tr><td>17</td><td>M5x20mm screw </td><td>2</td></tr>
-                        <tr><td>18</td><td>6901 12x24x6mm bearing </td><td>3</td></tr>
+                        <tr><td>18</td><td>6901 12x24x6mm bearing </td><td>5</td></tr>
                         <tr><td>19</td><td>61902 16x28x7 bearing </td><td>1</td></tr>
                         <tr><td>20</td><td>47uF capacitor 50V </td><td>4</td></tr>
                         <tr><td>21</td><td>7805 voltage regulator </td><td>1</td></tr>
@@ -293,6 +343,20 @@
                     <img src="media5/3/pcb1.jpg" width=800px><br>
                     <p>PCB after adding the microcontroller and motor drivers.</p>
                     <img src="media5/3/populatedpcb.jpg" width=800px><br>
+                    <p>The PCB and SD card reader is mounted to the base.</p>
+                    <img src="media5/3/d.jpg" width=800px><br>
+                    <p>The Electronic components are clamped to the acyrlic.</p>
+                    <img src="media5/3/d1.jpg" width=800px><br>
+                    <img src="media5/3/d2.jpg" width=800px><br>
+                    <p>Excess wires are coiled up.</p>
+                    <img src="media5/3/d3.jpg" width=800px><br>
+                    <p>Sufficient length is left to open the box for maintenance.</p>
+                    <img src="media5/3/d4.jpg" width=800px><br>
+                    <img src="media5/3/d5.jpg" width=800px><br>
+                    <p>Servo wiring for the arm.</p>
+                    <img src="media5/3/d6.jpg" width=800px><br>
+                    
+                    
                     <br><hr><br>
                     <h3 id="3test">Final prototype-Testing</h3><br><br>
                     <h4>First plot</h4>
@@ -345,6 +409,29 @@
                     <h3 id="3video">Final prototype-video</h3><br><br>
                     <iframe width=100% height=760px src="https://www.youtube.com/embed/uoFjJqn1yZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><hr><br>
                     <h3 id="3how">Final prototype-How to use the pen plotter</h3><br><br>
+                    <p>The main steps in using the pen plotter are:</p>
+                    <br>
+                    <ol>
+                        <li>Generating toolpath</li>
+                        <li>Mounting SD cardwith toolpath</li>
+                        <li> and Selecting toolpath</li>
+                    </ol><br><br>
+                    <h4>Generating toolpath</h4>
+                    <p>First the G-code is generated in cura, Then it is compressed by a python program.</p>
+                    <img src="media5/3/b.JPG" width=800px><br>
+                    <img src="media5/3/a.JPG" width=800px><br>
+                    <p>Guide for generating a toolpath can be found <a href="#1toolpath" style="text-decoration: none;">here</a></p>
+                    <br><br>
+                    <h4>Mounting SD cardwith toolpath</h4>
+                    <p>The SD card must be formatted to FAT32 and have a volume 32GB or less. This can be done using built in windows utilities.</p>
+                    <p>Copy the compressed G- code file to the SD card. The pen plotter can only read the first five toolpaths.</p>
+                    <img src="media5/3/c.jpg" width=800px><br>
+                    <img src="media5/3/e.jpg" width=800px><br>
+                    <br><br>
+                    <h4>Selecting toolpath</h4>
+                    <p>Once the SD card is inserted, the pen plotter will list the avalable toolpaths. Select the toolpathh by turning the rotory encoder.</p>
+                    
+                    <video width="800" autoplay muted loop><source src="media5/3/f.mp4" type="video/mp4"></video><br>
                     
                     <br><hr><br>
                     <h3 id="3problems">Final prototype-Possible improvements</h3><br><br>
