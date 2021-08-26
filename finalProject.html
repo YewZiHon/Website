@@ -64,7 +64,7 @@
                         <li><a href="#3print" style="text-decoration: none;">Final prototype-3D printing(expected completion 27)</a></li>
                         <li><a href="#3laser" style="text-decoration: none;">Final prototype-Laser cutting(expected completion 27)</a></li>
                         <li><a href="#3elec" style="text-decoration: none;">Final prototype-Electronics</a></li>
-                        <li><a href="#3test" style="text-decoration: none;">Final prototype-Testing(expected completion 27)</a></li>
+                        <li><a href="#3test" style="text-decoration: none;">Final prototype-Testing</a></li>
                         <li><a href="#3slide" style="text-decoration: none;">Final prototype-slide</a></li>
                         <li><a href="#3video" style="text-decoration: none;">Final prototype-video</a></li>
                         <li><a href="#3how" style="text-decoration: none;">Final prototype-How to use the pen plotter(expected completion 26)</a></li>
@@ -181,7 +181,48 @@
                     <img src="media5/3/populatedpcb.jpg" width=800px><br>
                     <br><hr><br>
                     <h3 id="3test">Final prototype-Testing</h3><br><br>
+                    <h4>First plot</h4>
+                    <p>Below is the first thing drawn by the pen plotter on the bare plastic of the pen plotter.</p>
+                    <img src="media5/3/firstplot.jpg" width=800px><br><br><br>
+                    <video width="800" autoplay muted loop><source src="media5/3/firstplot.mp4" type="video/mp4"></video><br>
+                    <p>Drawing the circle again on a sheet of paper this time. The resultant circle is slightly elipticle most likely because of backlash.</p>
+                    <img src="media5/3/circle.jpg" width=800px><br><br><br>
+                    <video width="800" autoplay muted loop><source src="media5/3/circle.mp4" type="video/mp4"></video><br>
                     
+                    <p>The next thing dwawn was a square. A square was what the first prototype plotter attempted to draw.</p>
+                    <img src="media5/3/square.jpg" width=800px><br><br><br>
+                    
+                    <p>Rabbit.</p>
+                    <img src="media5/3/rabbit.jpg" width=800px><br><br><br>
+                    <video width="800" autoplay muted loop><source src="media5/3/rabbit.mp4" type="video/mp4"></video><br>
+                    
+                    <p>T-Rex.</p>
+                    <img src="media5/3/trex.jpg" width=800px><br><br><br>
+                    <video width="800" autoplay muted loop><source src="media5/3/trex.mp4" type="video/mp4"></video><br>
+                    
+                    <p>Flowers.</p>
+                    <img src="media5/3/flower.jpg" width=800px><br><br><br>
+                    <video width="800" autoplay muted loop><source src="media5/3/flower.mp4" type="video/mp4"></video><br>
+                    
+                    <p>Standing rabbit.</p>
+                    <img src="media5/3/stdrabbit.jpg" width=800px><br><br><br>
+                    <video width="800" autoplay muted loop><source src="media5/3/stdrabbit.mp4" type="video/mp4"></video><br>
+                    
+                    <p>Cat.</p>
+                    <img src="media5/3/cat.jpg" width=800px><br><br><br>
+                    <video width="800" autoplay muted loop><source src="media5/3/cat.mp4" type="video/mp4"></video><br>
+                    
+                    <p>Dog.</p>
+                    <img src="media5/3/dog.jpg" width=800px><br><br><br>
+                    
+                    <p>Some text drawn by the plotter. The text looks rough because of backlash.</p>
+                    <img src="media5/3/text.jpg" width=800px><br><br><br>
+                    
+                    <p>Dinosaur.</p>
+                    <video width="800" autoplay muted loop><source src="media5/3/dinosaur.mp4" type="video/mp4"></video><br>
+                    
+                    <p>Another cat.</p>
+                    <video width="800" autoplay muted loop><source src="media5/3/cat2.mp4" type="video/mp4"></video><br>
                     
                     <br><hr><br>
                     <h3 id="3slide">Final prototype-slide</h3><br><br>
@@ -196,7 +237,7 @@
                     
                     <h4>Backlash</h4><br>
                     <p> Although the backlash is lesser than the second prototype, there is still some backlash. This can be seen in the below photo. The start and end point are not the same.</p>
-                    <img src="media5/3/backlash.JPG" width=800px><br><br><br>
+                    
                     
                     <h4>Inaccurate motion</h4><br>
                     <p>Linear interpolation is done in steps of 1mm this, can be decreased to make the motion more accurate. </p><br><br><br>
@@ -205,8 +246,11 @@
                     <p>CNC controllers like GRBL will plan movements in advance and create a buffer so that the velocity and acelleration of the arms will change slowly to avoid jerky motion and maintain a high accuracy.</p>
                     <img src="media5/3/grbl.JPG" width=800px><br><br><br><br><br><br>
                     
-                    <h4>Lack of accelleration</h4><br> 
+                    <h4>Lack of accelleration control</h4><br> 
                     <p>There is no accelleration when driving the stepper motors and leads to jerky motion. The speed is also has to be kept low to avoid skipped steps.</p><br><br><br>
+                    
+                    <h4>Faulty rotory encoder</h4><br> 
+                    <p>Some pulses of the rotory encoder could not be read as a logic high by the microcontroller, making the selection sometimes unpredictable unless the rotory encoder is turned slowly.</p><br><br><br>
                     
                     <h4>Unoptimised program</h4><br> 
                     <p>digitalWrite() was used in the program but the function has a relatively long execution time and port manipulation would have been faster. Using timer interupts instead of delay would also have allowed the microcontroller to perform other tasks while in the delay.</p><br><br><br>
