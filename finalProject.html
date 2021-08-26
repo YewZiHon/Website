@@ -41,19 +41,19 @@
             <div id="content">
                 
                 <div id="main"><br><br>
-                    <h1>Final Project ---work in progress, 56% done---</h1><br>
+                    <h1>Final Project ---work in progress, 70% done---</h1><br>
                     <p>Here lies the documentation of my final project, the pen plotter.</p>
                     <br><hr><br>
                     <h3>Click on a link below to jump to a section:</h3><br>
                     <ul style="margin-left:50px;">
                         <li><a href="#idea" style="text-decoration: none;">Ideation</a></li>
                         <li><a href="#features" style="text-decoration: none;">Features</a></li>
-                        <li><a href="#1cad" style="text-decoration: none;">First prototype-CAD(expected completion 26)</a></li>
+                        <li><a href="#1cad" style="text-decoration: none;">First prototype-CAD</a></li>
                         <li><a href="#1ik" style="text-decoration: none;">First prototype-inverse kinematics</a></li>
-                        <li><a href="#1prog" style="text-decoration: none;">First prototype-Programming(expected completion 26)</a></li>
+                        <li><a href="#1prog" style="text-decoration: none;">First prototype-Programming</a></li>
                         <li><a href="#1elec" style="text-decoration: none;">First prototype-Electronics</a></li>
                         <li><a href="#1file" style="text-decoration: none;">First prototype-file format</a></li>
-                        <li><a href="#1toolpath" style="text-decoration: none;">First prototype-toolpath generation(expected completion 26)</a></li>
+                        <li><a href="#1toolpath" style="text-decoration: none;">First prototype-toolpath generation</a></li>
                         <li><a href="#1test" style="text-decoration: none;">First prototype-Testing</a></li>
                         <li><a href="#1problems" style="text-decoration: none;">First prototype-problems(expected completion 27)</a></li>
                         <li><a href="#2cad" style="text-decoration: none;">Second prototype-CAD(expected completion 27)</a></li>
@@ -94,8 +94,26 @@
                     <br><hr><br>
                     <h3 id="1cad">First prototype-CAD</h3><br><br>
                     <p>The first prototype was a sanity check. To make sure that this concept was even doable by me. As such crucial components such as the end effector, the pen lifter and base were ommited.</p>
+                    <p>Below is the assembled first prototype.</p>
+                    <img src="media5/1/cad.JPG" width=800p><br>
                     
+                    <img src="media5/1/cad1.JPG" width=800p><br>
+                    <p>The small stepper motors used are light enough to be extended to drive the second arm.</p>
+                    <img src="media5/1/cad3.JPG" width=800p><br>
+                    <p>The arms have ribs to strengthen them and make them more ridgid. Below is the outer arm, the one that holds the pen.</p>
+                    <img src="media5/1/cad4.JPG" width=800p><br>
                     
+                    <img src="media5/1/cad5.JPG" width=800p><br>
+                    
+                    <img src="media5/1/cad6.JPG" width=800p><br>
+                    <p>Below is the CAD model for the inner arm.</p>
+                    <img src="media5/1/cad7.JPG" width=800p><br>
+                    
+                    <img src="media5/1/cad8.JPG" width=800p><br>
+                    
+                    <img src="media5/1/cad9.JPG" width=800p><br>
+                    <p>The first prototype assembled and tested. The arms were ridgid enough but the push fit connection to the shaft of the stepper motor was not ridgid enough. The stepper motor is glued onto a scrap of aluminium extrusion and clamped to the table for testing.</p>
+                    <img src="media5/1/comp.jpg" width=800px><br>
                     
                     <br><hr><br>
                     <h3 id="1ik">First prototype-inverse kinematics</h3><br><br>
@@ -106,6 +124,34 @@
                     
                     <br><hr><br>
                     <h3 id="1prog">First prototype-Programming</h3><br><br>
+                    <p>Below is the homing switch function analog channels A6 and A7 are used to read the switch. Since the pins on the microcontroller are only connected to the analog MUX, Only analogRead can be used to read the pin states.</p>
+                    <img src="media5/1/prg.JPG" width=800px><br>
+                    <p>The outer arm is first moved out of the way.</p>
+                    <img src="media5/1/prg1.JPG" width=800px><br>
+                    <p>Homing is then done. First with a higher speed, then homing again with a lower speed for more accuracy.</p>
+                    <img src="media5/1/prg2.JPG" width=800px><br>
+                    <p>The arm is then moved to (0, 0), the lower left corner.</p>
+                    <img src="media5/1/prg3.JPG" width=800px><br>
+                    <p>The function below polls the SD card to make sure that it is inserted.</p>
+                    <img src="media5/1/prg7.JPG" width=800px><br>
+                    <p>Below is the interupt service routine used to read the rotory encoder.</p>
+                    <img src="media5/1/prg5.JPG" width=800px><br>
+                    <p>The magic number of the file is verified.</p>
+                    <img src="media5/1/prg11.JPG" width=800px><br>
+                    <p>The metadata of the file is read.</p>
+                    <img src="media5/1/prg12.JPG" width=800px><br>
+                    <p>The coordinates of the toolpath is read here.</p>
+                    <img src="media5/1/prg13.JPG" width=800px><br>
+                    <p>Below are the functions for lifting and dropping the pen.</p>
+                    <img src="media5/1/prg6.JPG" width=800px><br>
+                    <p>The function below calculates the linear moves for the pen plotter.</p>
+                    <img src="media5/1/prg8.JPG" width=800px><br>
+                    <p>The linear moves are interpolated here so that the movement would be more accurate.</p>
+                    <img src="media5/1/prg9.JPG" width=800px><br>
+                    <p>The inverse kinematics is calculated here.</p>
+                    <img src="media5/1/prg10.JPG" width=800px><br>
+                    <p>Below is the function that does the timing and calculations to move the arm when plotting.</p>
+                    <img src="media5/1/prg4.JPG" width=800px><br>
                     
                     <br><hr><br>
                     <h3 id="1elec">First prototype-Electronics</h3><br><br>
