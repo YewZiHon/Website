@@ -118,8 +118,46 @@
                     <img src="media5/1/fileformat.jpg" width=100%><br>
                     <br><hr><br>
                     <h3 id="1toolpath">First prototype-toolpath generation</h3><br><br>
+                    <p>The toolpath is generted by using Cura. The resulatnt toolpath will only consist of rapid moves and linear moves.</p>
+                    
+                    <p>First, the STL file to be plotted is opened in Cura.</p>
+                    <img src="media5/1/tp.JPG" width=800px><br>
+                    
+                    <p>The Mesh is rotated to the correct orientation to fit into the area that the pen plotter can plot.</p>
+                    <img src="media5/1/tp1.JPG" width=800px><br>
                     
                     
+                    <video width="800" autoplay muted loop><source src="media5/1/tp2.mp4" type="video/mp4"></video><br>
+                    <p>The thickness of the mesh will need to be 0.1mm.</p>
+                    <img src="media5/1/tp3.JPG" width=800px><br>
+                    <p>If the thickness is not 0.1mm, the scale would need to be changed to 0.1mm.</p>
+                    <img src="media5/1/tp4.JPG" width=800px><br>
+                    <p>The layer height also needs to be 0.1mm.</p>
+                    <img src="media5/1/tp5.JPG" width=800px><br>
+                    <p>There must be 0% infill, 0 top and bottom layers and only 1 outer wall.</p>
+                    <img src="media5/1/tp6.JPG" width=800px><br>
+                    <p>Once the settings are done, click on slice.</p>
+                    <img src="media5/1/tp7.JPG" width=800px><br>
+                    <p>Select preview to check the toolpath.</p>
+                    <img src="media5/1/tp8.JPG" width=800px><br>
+                    <p>Previewed toolpath</p>
+                    <img src="media5/1/tp9.JPG" width=800px><br>
+                    <p>Toolpath generation</p>
+                    <video width="800" autoplay muted loop><source src="media5/1/tpa.mp4" type="video/mp4"></video><br>
+                    
+                    <h4>G-code compression</h4>
+                    <p>To reduce the time taken by the microcontroller to read the G-code file. the G- code is compressed and converted to another file format.</p>
+                    <p>To begin open command prompt. Python must be installed beforehand.</p>
+                    <img src="media5/1/conv.JPG" width=800px><br>
+                    <p>Type "python", followed by the python file location.</p>
+                    <img src="media5/1/conv1.JPG" width=800px><br>
+                    <p>A dialog will appear to choose a file.</p>
+                    <img src="media5/1/conv2.JPG" width=800px><br>
+                    <p>Choose a file and click open.</p>
+                    <img src="media5/1/conv3.JPG" width=800px><br>
+                    <p>If the selected file is a G-code file, the file should be converted with no errors and the command prompt can be closed. Below shows the converted file.</p>
+                    <img src="media5/1/conv4.JPG" width=800px><br>
+                    <p>Click <a href="media5/1/AUGCtranslator.zip" download>here</a> to download Python project.</p>
                     <br><hr><br>
                     <h3 id="1test">First prototype-Testing</h3><br><br>
                     <p>Below is the only test of the first prototype. After this test is was clear that the stepper motors used were very inadequate and the deign was very much not ridgid enough.</p><br>
